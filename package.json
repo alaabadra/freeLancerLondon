@@ -22,7 +22,10 @@
   "homepage": "https://github.com/alaabadra/freeLancerLondon#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+<<<<<<< HEAD
     "concurrently": "^4.1.0",
+=======
+>>>>>>> 0c7b72fb2346d5da5dfa5393ec133efd70b1e3c3
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
