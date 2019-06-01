@@ -13,7 +13,7 @@ import {
   pageNotFound,
 
 } from './Components';
-export default class  App extends React.Component() {
+export default class  App extends React.Component {
   state = {
     isLogged: true,
     userInfo : null,
@@ -26,7 +26,7 @@ export default class  App extends React.Component() {
     <Router>
       <Header />
       <Switch>
-      <Route exact path = '/eader' component={Header}/>
+      <Route exact path = '/header' component={Header}/>
         <Route exact path = '/footer' component={Footer}/>
          <Route exact path = '/login' component={Login}/>
         <Route exact path = '/signup' component={Signup}/>

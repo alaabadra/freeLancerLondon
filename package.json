@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./server/index.js"
+    "server": "nodemon node ./server/index.js",
+    "client": "npm start --prefix client",
+    "start": "NODE_ENV=production concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/alaabadra/freeLancerLondon#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "concurrently": "^4.1.0",
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
