@@ -31,7 +31,7 @@ export default class  App extends React.Component {
         <Route exact path = '/footer' component={Footer}/>
          <Route exact path = '/login' component={Login}/>
         <Route exact path = '/signup' component={Signup}/>
-        <Route exact path = '/landing' component={LandingPage}/>
+        {/* <Route exact path = '/landing' component={LandingPage}/> */}
         <Route exact path = '/home' component={Home}/>
         <Route exact path = '/notfound'component={PageNotFound}/>
       </Switch>
