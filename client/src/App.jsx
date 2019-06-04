@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import './style.css';
-import  'bootstrap/dist/css/bootstrap.min.css';
+// import  'bootstrap/dist/css/bootstrap.min.css';
 
 import {
   Header,
@@ -10,7 +10,7 @@ import {
   Signup,
   LandingPage,
   Home,
-  pageNotFound,
+  PageNotFound,
 
 } from './Components';
 export default class  App extends React.Component {
@@ -20,19 +20,20 @@ export default class  App extends React.Component {
   };
   render(){
 
-  
+  const {isLogged} = this.state;
   return (
+    
    <>
     <Router>
-      <Header />
+      <Header isLogged={isLogged}/>
       <Switch>
       <Route exact path = '/header' component={Header}/>
         <Route exact path = '/footer' component={Footer}/>
          <Route exact path = '/login' component={Login}/>
         <Route exact path = '/signup' component={Signup}/>
-        <Route exact path = '/' component={LandingPage}/>
+        <Route exact path = '/landing' component={LandingPage}/>
         <Route exact path = '/home' component={Home}/>
-        <Route exact path = '/notfound'component={pageNotFound}/>
+        <Route exact path = '/notfound'component={PageNotFound}/>
       </Switch>
       <Footer />
     </Router>
