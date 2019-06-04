@@ -15,7 +15,7 @@ const renderCard = data=>{
     </div>
     </Link>  
     ))
-    const Cards = ({ data }) => {=
+    const Cards = ({ data }) => {
         return <section className="cards__container">{renderCard(data)}</section>;
       };
       
