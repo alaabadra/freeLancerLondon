@@ -1,7 +1,7 @@
 import React from 'react';
 import offerDetails from '../../utils/offers.js'
 
-export default class OfferCard extends React.Component {
+export default class MyApplication extends React.Component {
     state = {
         offers: null
     };
@@ -14,12 +14,13 @@ export default class OfferCard extends React.Component {
         return (
 
             <>
-                {offers
+                {offers!=null
                     ? offers.map(item => {
                         if (item.status == 'active') {
                             return <OfferCard
                                 offers={item}
                                 key={item.id}
+                                status={item.status}
                                
                             />
                         }
