@@ -1,35 +1,43 @@
-import React from 'react';
-import offerDetails from '../../utils/offers.js'
+import { Container } from 'react-bootstrap';
 
-export default class MyApplication extends React.Component {
+import ApplicationCard from '../CommonComponents/OfferCard';
+import myApplicationsData from '../utils/myApplications';
+
+import './style.css';
+
+export default class MyApplications extends React.Component {
     state = {
-        offers: null
+      myApplications: [],
     };
+  
     componentDidMount() {
-        this.setState({offers : offerDetails})
+      // fetch for myApplications data and store it in the state
+      this.setState({ myApplications: myApplicationsData });
     }
-
+  
     render() {
-        const { offers } = this.state;
-        return (
-
-            <>
-                {offers!=null
-                    ? offers.map(item => {
-                        if (item.status == 'active') {
-                            return <OfferCard
-                                offers={item}
-                                key={item.id}
-                                status={item.status}
-                               
-                            />
-                        }
-                    })
-            : null}
-            </>
-
-        )
-
-
+      const { myApplications } = this.state;
+      return (
+        <>
+          <Container className="page__container">
+            <div className="my-applications__title">
+              <span>My Applications</span>
+            </div>
+            {myApplications
+              ? myApplications.map(item => {
+                  return (
+                    <ApplicationCard
+                      hover
+                      offer={item}
+                      key={item.id}
+                      saved={item.saved}
+                      status={item.status}
+                    />
+                  );
+                })
+              : null}
+          </Container>
+        </>
+      );
     }
-}
+  }

@@ -1,11 +1,13 @@
+
 export default [
   {
     id: 1,
     position: 'Marketing Manager',
     title: 'Small Shop seeks workers',
     description:
-      'We are looking to hire a Marketing Manager who will be in charge of overseeing the promotion of our companys brands.  As a successful hire, you will be  responsible  for developing pricing  strategies identify identifying new customers, supporting lead',
+      'We are looking to hire a Marketing Manager who will be in charge of overseeing the promotion of our companys brands.  As a successful hire, you will be  responsible  for developing pricing  strategies identify identifying new customers, supporting lead you will be  responsible  for developing pricing  strategies identify identifying new customers, supporting lead',
     status: 'completed',
+    saved: true,
   },
   {
     id: 2,
@@ -13,7 +15,8 @@ export default [
     title: 'Buisness setup plan',
     description:
       ' Prepare balance sheets, profit and loss statements and other financial reports. Responsibilities also include analyzing trends, costs, revenues,  financial commitments and obligations incurred to predict future revenues and expenses. Reports',
-    status: 'pending',
+    status: 'finished',
+    saved: true,
   },
   {
     id: 3,
@@ -22,6 +25,7 @@ export default [
     description:
       'We are looking to hire a Marketing Manager who will be in charge of overseeing the promotion of our companys brands.  As a successful hire, you will be  responsible  for developing pricing  strategies identify identifying new customers, supporting lead',
     status: 'completed',
+    saved: false,
   },
   {
     id: 4,
@@ -29,7 +33,8 @@ export default [
     title: 'Small Shop seeks workers',
     description:
       'We are looking to hire a Marketing Manager who will be in charge of overseeing the promotion of our companys brands.  As a successful hire, you will be  responsible  for developing pricing  strategies identify identifying new customers, supporting lead',
-    status: 'pending',
+    status: 'finished',
+    saved: true,
   },
   {
     id: 5,
@@ -38,6 +43,7 @@ export default [
     description:
       'We are looking to hire a Marketing Manager who will be in charge of overseeing the promotion of our companys brands.  As a successful hire, you will be  responsible  for developing pricing  strategies identify identifying new customers, supporting lead',
     status: 'completed',
+    saved: false,
   },
   {
     id: 6,
@@ -46,6 +52,7 @@ export default [
     description:
       'We are looking to hire a Marketing Manager who will be in charge of overseeing the promotion of our companys brands.  As a successful hire, you will be  responsible  for developing pricing  strategies identify identifying new customers, supporting lead',
     status: 'active',
+    saved: false,
   },
   {
     id: 7,
@@ -54,6 +61,7 @@ export default [
     description:
       'We are looking to hire a Marketing Manager who will be in charge of overseeing the promotion of our companys brands.  As a successful hire, you will be  responsible  for developing pricing  strategies identify identifying new customers, supporting lead',
     status: 'active',
+    saved: false,
   },
   {
     id: 8,
@@ -61,7 +69,8 @@ export default [
     title: 'Voice artist for short video ',
     description:
       'We are looking to hire a Marketing Manager who will be in charge of overseeing the promotion of our companys brands.  As a successful hire, you will be  responsible  for developing pricing  strategies identify identifying new customers, supporting lead',
-    status: 'finished',
+    status: 'pending',
+    saved: true,
   },
   {
     id: 9,
@@ -70,5 +79,6 @@ export default [
     description:
       'We are looking to hire a Marketing Manager who will be in charge of overseeing the promotion of our companys brands.  As a successful hire, you will be  responsible  for developing pricing  strategies identify identifying new customers, supporting lead',
     status: 'active',
+    saved: false,
   },
 ];
