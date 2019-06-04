@@ -3,7 +3,7 @@ import {Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './style.css';
 const renderCard = data=>{
-    data.map(({ id, imageUrl, fullname,profession,text})=>(
+    data.map(({ id, imageUrl, fullname,profession,title})=>(
           <Link key={id} to="/" className="cards__cadrs">
     <div className="cards__img">
         <img src={imageUrl} alt={`${fullname} fullname`}/>
@@ -15,7 +15,7 @@ const renderCard = data=>{
     </div>
     </Link>  
     ))
-    const Cards = ({ data }) => {////////////////////////////
+    const Cards = ({ data }) => {=
         return <section className="cards__container">{renderCard(data)}</section>;
       };
       
