@@ -8,7 +8,7 @@ export default [
       status: 'completed',
     },
     {
-      id: 2,
+      id:2,
       position: 'Accountant',
       title: 'Buisness setup plan',
       description:

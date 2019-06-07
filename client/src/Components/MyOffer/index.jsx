@@ -5,7 +5,7 @@ import offersDetails from '../utils/myOffers';
 import './style.css';
 export default class MyOffers extends Component {
 state={
-    offers:null;
+    offers:null
 }
 componentDidMount(){
     this.setState({offers:offersDetails});
@@ -25,6 +25,7 @@ render(){
                         return(
                             <Col xs={12} md={6} key={item}>
                                 <Card className="myoffer__card" key={item.id} onClick={()=> history.push(`/app/offers/${item.id}`)}>
+                                    {/* this page will go into offerdetails */}
                                     <Card.Header className="myoffer__header-card">
                                     <Card.Text className={`myoffer__status ${this.statusClassName(item.status)}`}>{item.status}</Card.Text>
                                     </Card.Header>
