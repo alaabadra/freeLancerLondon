@@ -1,6 +1,6 @@
 export default [
     {
-      id: 1,
+      id: 1,      
       position: 'Marketing Manager',
       title: 'Small Shop seeks workers',
       description:
