@@ -7,7 +7,7 @@ export default class OfferCard extends React.Component{
         statusDiv: null,
         hovered:'',
         saved:false
-    };
+    };                          
     componentDidMount(){
         const {offer,status} = this.props;
         //saving card 
