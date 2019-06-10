@@ -1,5 +1,14 @@
 ////////////////
 //when show in side in page profile
-module.exports = (req, res) => {
-    res.send(' get member skills');
-  }; 
+const { getMemberSkills } = require('../../database/queries/members/index');
+
+module.exports = (req, res, next) => {
+  getMemberSkills(req.params.memberId)
+    .then((result) => {
+      res.send({
+        error: null,
+        data: result.rows,
+      });
+    })
+    .catch(err => next(err));
+  }
